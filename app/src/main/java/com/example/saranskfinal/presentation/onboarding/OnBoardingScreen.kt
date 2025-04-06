@@ -177,9 +177,9 @@ fun rememberConnectivityState(): State<Boolean> {
     val context = LocalContext.current
 
     return produceState(initialValue = context.hasInternetConnection()) {
-        while (true) {
+        while (true){
             value = context.hasInternetConnection()
-            delay(2000) // Проверяем каждые 2 секунды
+            delay(2000)
         }
     }
 }

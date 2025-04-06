@@ -15,3 +15,5 @@ fun Context.hasInternetConnection() : Boolean{
             capabilities.hasCapability(NetworkCapabilities.NET_CAPABILITY_VALIDATED)
 
 }
+
+

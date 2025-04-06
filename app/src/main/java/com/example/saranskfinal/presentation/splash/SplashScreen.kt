@@ -27,6 +27,8 @@ import kotlinx.coroutines.delay
 @Composable
 fun SplashScreen(navController: NavController) {
 
+
+
     LaunchedEffect(Unit) {
         delay(2000)
         navController.navigate(OnBoarding)
@@ -43,6 +45,7 @@ fun SplashScreen(navController: NavController) {
                 tint = Color.Unspecified,
                 modifier = Modifier.size(164.dp)
             )
+
             Text("LanguageApp", fontSize = 36.sp, color = Color.White, fontWeight = FontWeight.Bold)
         }
     }
